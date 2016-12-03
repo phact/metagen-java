@@ -17,6 +17,7 @@
     <modules>
         <module>project-defaults</module>
         <module>metagen-api</module>
+        <module>metagen-lang</module>
         <module>metagen-lib-basics</module>
         <module>metagen-lib-curves</module>
         <module>metagen-lib-composer</module>
