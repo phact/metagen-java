@@ -1,6 +1,6 @@
 package io.virtdata.libraryimpl;
 
-import io.virtdata.api.FunctionType;
+import io.virtdata.parserapi.FunctionType;
 import io.virtdata.libraryimpl.composers.*;
 
 import java.util.function.*;

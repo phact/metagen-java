@@ -1,6 +1,6 @@
 package io.virtdata.templates;
 
-import io.virtdata.api.ValuesArrayBinder;
+import io.virtdata.parserapi.ValuesArrayBinder;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
 package io.virtdata.libraryimpl;
 
-import io.virtdata.api.FunctionType;
-import io.virtdata.api.DataMapper;
+import io.virtdata.parserapi.FunctionType;
+import io.virtdata.parserapi.DataMapper;
 import io.virtdata.core.DataMapperFunctionMapper;
 import org.testng.annotations.Test;
 

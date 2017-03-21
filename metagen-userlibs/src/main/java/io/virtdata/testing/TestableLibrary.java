@@ -1,7 +1,7 @@
 package io.virtdata.testing;
 
 import com.google.auto.service.AutoService;
-import io.virtdata.api.DataMapperLibrary;
+import io.virtdata.parserapi.DataMapperLibrary;
 import io.virtdata.core.FunctionalDataMappingLibrary;
 import io.virtdata.testing.functions.ARandomPOJO;
 

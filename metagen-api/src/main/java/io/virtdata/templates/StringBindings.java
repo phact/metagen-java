@@ -1,6 +1,6 @@
 package io.virtdata.templates;
 
-import io.virtdata.api.Binder;
+import io.virtdata.parserapi.Binder;
 import io.virtdata.core.Bindings;
 
 /**

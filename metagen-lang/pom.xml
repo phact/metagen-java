@@ -7,7 +7,7 @@
     <parent>
         <artifactId>project-defaults</artifactId>
         <groupId>io.virtdata</groupId>
-        <version>1.0.16-SNAPSHOT</version>
+        <version>1.0.23-SNAPSHOT</version>
         <relativePath>../project-defaults</relativePath>
     </parent>
 
@@ -15,6 +15,11 @@
     <url>http://virtdata.io/</url>
 
     <dependencies>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.7</version>
+        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -32,12 +37,28 @@
             <version>1.0.0m1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+
 
 
     </dependencies>
 
     <build>
         <plugins>
+
+            <plugin>
+                <version>3.2</version>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -66,7 +87,32 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-maven-plugin</artifactId>
+                <version>4.5.3</version>
+                <configuration>
+                    <sourceDirectory>${project.build.sourceDirectory}/io/virtdata/grammars</sourceDirectory>
+                    <arguments>
+                        <argument>-package</argument>
+                        <argument>io.virtdata.generated</argument>
+                    </arguments>
+                    <outputDirectory>${project.build.sourceDirectory}/io/virtdata/generated</outputDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>antlr</id>
+                        <goals>
+                            <goal>antlr4</goal>
+                        </goals>
+                        <phase>generate-sources</phase>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
+
     </build>
 
 

@@ -1,8 +1,8 @@
 package io.virtdata.libimpl;
 
 import com.google.auto.service.AutoService;
-import io.virtdata.api.DataMapperLibrary;
-import io.virtdata.api.specs.SpecData;
+import io.virtdata.parserapi.DataMapperLibrary;
+import io.virtdata.parserapi.specs.SpecData;
 import io.virtdata.core.ResolvedFunction;
 import io.virtdata.mappers.mapped_discrete.IDistMapper;
 import org.apache.commons.math3.distribution.*;

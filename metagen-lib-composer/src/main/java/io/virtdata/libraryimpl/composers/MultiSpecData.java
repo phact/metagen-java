@@ -1,8 +1,8 @@
 package io.virtdata.libraryimpl.composers;
 
-import io.virtdata.api.ValueType;
-import io.virtdata.api.specs.SpecData;
-import io.virtdata.api.specs.Specifier;
+import io.virtdata.parserapi.ValueType;
+import io.virtdata.parserapi.specs.SpecData;
+import io.virtdata.parserapi.specs.Specifier;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

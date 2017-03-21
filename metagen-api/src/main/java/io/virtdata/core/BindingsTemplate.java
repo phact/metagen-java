@@ -20,8 +20,8 @@ package io.virtdata.core;
 
 //
 
-import io.virtdata.api.DataMapper;
-import io.virtdata.api.DataMapperLibrary;
+import io.virtdata.parserapi.DataMapper;
+import io.virtdata.parserapi.DataMapperLibrary;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

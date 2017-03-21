@@ -1,7 +1,7 @@
 package io.virtdata.functional;
 
-import io.virtdata.api.Desc;
-import io.virtdata.api.Example;
+import io.virtdata.parserapi.Desc;
+import io.virtdata.parserapi.Example;
 
 import java.util.function.LongUnaryOperator;
 

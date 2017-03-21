@@ -1,6 +1,6 @@
 package io.virtdata.libraryimpl;
 
-import io.virtdata.api.DataMapper;
+import io.virtdata.parserapi.DataMapper;
 import io.virtdata.core.DataMapperFunctionMapper;
 
 import java.util.function.Function;

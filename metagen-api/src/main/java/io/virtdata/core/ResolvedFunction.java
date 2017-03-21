@@ -1,9 +1,9 @@
 package io.virtdata.core;
 
 import com.strobel.reflection.Type;
-import io.virtdata.api.DataMapperLibrary;
-import io.virtdata.api.FunctionType;
-import io.virtdata.api.ValueType;
+import io.virtdata.parserapi.DataMapperLibrary;
+import io.virtdata.parserapi.FunctionType;
+import io.virtdata.parserapi.ValueType;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;

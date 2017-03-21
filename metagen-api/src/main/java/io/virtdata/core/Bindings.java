@@ -20,14 +20,12 @@ package io.virtdata.core;
 
 //
 
-import io.virtdata.api.DataMapper;
+import io.virtdata.parserapi.DataMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Maps a template with named bind points and specifiers onto a set of data

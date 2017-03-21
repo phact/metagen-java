@@ -1,6 +1,6 @@
 package io.virtdata.functional;
 
-import io.virtdata.api.DataMapper;
+import io.virtdata.parserapi.DataMapper;
 import org.apache.commons.math3.random.MersenneTwister;
 
 public class RandomRangedToDouble implements DataMapper<Double> {

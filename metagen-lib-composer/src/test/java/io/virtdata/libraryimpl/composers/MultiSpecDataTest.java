@@ -1,6 +1,6 @@
 package io.virtdata.libraryimpl.composers;
 
-import io.virtdata.api.ValueType;
+import io.virtdata.parserapi.ValueType;
 import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

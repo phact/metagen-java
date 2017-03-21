@@ -1,8 +1,8 @@
 package io.virtdata.core;
 
-import io.virtdata.api.DataMapperLibrary;
-import io.virtdata.api.ValueType;
-import io.virtdata.api.specs.SpecData;
+import io.virtdata.parserapi.DataMapperLibrary;
+import io.virtdata.parserapi.ValueType;
+import io.virtdata.parserapi.specs.SpecData;
 import io.virtdata.reflection.ConstructorResolver;
 import org.reflections.Reflections;
 import org.reflections.scanners.ResourcesScanner;

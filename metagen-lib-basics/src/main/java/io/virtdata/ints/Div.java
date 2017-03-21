@@ -14,7 +14,7 @@
 */
 package io.virtdata.ints;
 
-import io.virtdata.api.FDoc;
+import io.virtdata.parserapi.FDoc;
 
 import java.util.function.IntUnaryOperator;
 

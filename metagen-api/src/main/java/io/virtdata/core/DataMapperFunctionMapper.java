@@ -1,7 +1,7 @@
 package io.virtdata.core;
 
-import io.virtdata.api.FunctionType;
-import io.virtdata.api.DataMapper;
+import io.virtdata.parserapi.FunctionType;
+import io.virtdata.parserapi.DataMapper;
 
 import java.util.function.*;
 
@@ -11,7 +11,7 @@ import java.util.function.*;
  * generalized reflection and annotation-based approach. If it gets too verbose,
  * (for some definition of "too"), then it may be refactored.</p>
  * <p>The primary goal of this approach is to allow for primitive-level
- * lambdas when function are composed together. This will allow for significant
+ * lambdas when functions are composed together. This will allow for significant
  * performance gains when there are only a few steps in a composed function
  * which are non-primitive, which is the general case.</p>
  * <p>Composition should be supported between all primitive functions

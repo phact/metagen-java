@@ -1,7 +1,7 @@
 package io.virtdata;
 
 import com.google.auto.service.AutoService;
-import io.virtdata.api.DataMapperLibrary;
+import io.virtdata.parserapi.DataMapperLibrary;
 import io.virtdata.core.FunctionalDataMappingLibrary;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

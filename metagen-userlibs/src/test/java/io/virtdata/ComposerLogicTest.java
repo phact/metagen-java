@@ -1,6 +1,6 @@
 package io.virtdata;
 
-import io.virtdata.api.DataMapper;
+import io.virtdata.parserapi.DataMapper;
 import io.virtdata.libraryimpl.ComposerLibrary;
 import io.virtdata.testing.functions.ARandomPOJO;
 import org.testng.annotations.Test;

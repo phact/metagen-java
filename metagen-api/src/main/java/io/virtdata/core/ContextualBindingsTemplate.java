@@ -1,6 +1,6 @@
 package io.virtdata.core;
 
-import io.virtdata.api.ValuesArrayBinder;
+import io.virtdata.parserapi.ValuesArrayBinder;
 
 /**
  * A template that maps a set of specifiers, a context object, and a method for applying

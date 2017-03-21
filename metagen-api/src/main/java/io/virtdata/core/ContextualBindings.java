@@ -1,7 +1,7 @@
 package io.virtdata.core;
 
-import io.virtdata.api.ValuesArrayBinder;
-import io.virtdata.api.Binder;
+import io.virtdata.parserapi.ValuesArrayBinder;
+import io.virtdata.parserapi.Binder;
 
 /**
  * <p>A thread-local template that describes a set of data mappers, a context object, and a method for applying
