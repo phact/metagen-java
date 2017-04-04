@@ -22,7 +22,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Convenient singleton for accessing all loadable DataMapper Library instances.
+ * Convenient singleton for accessing all loadable MetagenLoader Library instances.
  */
 public class DataMapperLibraryFinder {
 
@@ -43,17 +43,17 @@ public class DataMapperLibraryFinder {
     private synchronized static Map<String, DataMapperLibrary> getLibraries() {
         if (libraries.size()==0) {
             ClassLoader cl = Thread.currentThread().getContextClassLoader();
-            logger.debug("loading DataMapper Libraries");
+            logger.debug("loading MetagenLoader Libraries");
             ServiceLoader<DataMapperLibrary> sl = ServiceLoader.load(DataMapperLibrary.class);
             for (DataMapperLibrary dataMapperLibrary : sl) {
                 if (libraries.get(dataMapperLibrary.getLibraryName()) != null) {
-                    throw new RuntimeException("DataMapper Library '" + dataMapperLibrary.getLibraryName()
+                    throw new RuntimeException("MetagenLoader Library '" + dataMapperLibrary.getLibraryName()
                             + "' is already defined.");
                 }
                 libraries.put(dataMapperLibrary.getLibraryName(),dataMapperLibrary);
             }
         }
-        logger.info("Loaded DataMapper Libraries:" + libraries.keySet());
+        logger.info("Loaded MetagenLoader Libraries:" + libraries.keySet());
         return libraries;
     }
 

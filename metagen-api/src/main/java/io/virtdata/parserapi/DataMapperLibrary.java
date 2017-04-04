@@ -38,7 +38,7 @@ public interface DataMapperLibrary {
     }
 
     /**
-     * DataMapper Libraries are required to test specifier strings in order to determine
+     * MetagenLoader Libraries are required to test specifier strings in order to determine
      * whether or not the library could possibly find matching functions.
      * This allows varying types of specifiers to be used that are library specific,
      * allowing an ad-hoc form of syntax layering.

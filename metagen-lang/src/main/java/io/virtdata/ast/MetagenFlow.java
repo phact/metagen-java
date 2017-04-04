@@ -1,7 +1,5 @@
 package io.virtdata.ast;
 
-import com.sun.javaws.exceptions.InvalidArgumentException;
-
 import java.util.ArrayList;
 import java.util.List;
 

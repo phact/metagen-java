@@ -17,7 +17,7 @@ import java.util.Stack;
 public class MetagenBuilder extends MetagenCallBaseListener {
     private final static Logger logger = LoggerFactory.getLogger(MetagenBuilder.class);
 
-    private MetagenAST model = new MetagenAST();
+    private MetagenModel model = new MetagenModel();
     private List<ErrorNode> errorNodes = new ArrayList<>();
 
     private Stack<MetagenCallParser.MetagenFlowContext> flowContexts = new Stack<>();
@@ -162,7 +162,7 @@ public class MetagenBuilder extends MetagenCallBaseListener {
         return calls.peek().getMetagenCall(0);
     }
 
-    public MetagenAST getModel() {
+    public MetagenModel getModel() {
         return model;
     }
 }

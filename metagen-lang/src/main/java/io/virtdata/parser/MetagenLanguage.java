@@ -1,6 +1,6 @@
 package io.virtdata.parser;
 
-import io.virtdata.ast.MetagenAST;
+import io.virtdata.ast.MetagenModel;
 import io.virtdata.generated.MetagenCallLexer;
 import io.virtdata.generated.MetagenCallParser;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -15,9 +15,8 @@ public class MetagenLanguage {
 
     private final static Logger logger = LoggerFactory.getLogger(MetagenLanguage.class);
 
-    public static MetagenAST parse(String description, Reader input) {
+    public static MetagenModel parse(Reader input) {
 
-        logger.info("Parsing input '" + description + "'.");
         try {
             ANTLRInputStream ais = new ANTLRInputStream(input);
             MetagenCallLexer lexer = new MetagenCallLexer(ais);
@@ -37,9 +36,8 @@ public class MetagenLanguage {
                 System.out.println(astListener.getErrorNodes());
             }
 
-            MetagenAST metagenAST = astListener.getModel();
-            logger.info("Parsed:\n" + description);
-            return metagenAST;
+            MetagenModel metagenModel = astListener.getModel();
+            return metagenModel;
 
 //        List<String> context = contextBuilder.getContext();
 

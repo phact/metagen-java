@@ -56,7 +56,7 @@ public class MetagenBuilderTest {
             System.out.println(astListener.getErrorNodes());
         }
 
-        MetagenAST ast = astListener.getModel();
+        MetagenModel ast = astListener.getModel();
         assertThat(ast.getFlows().size()).isEqualTo(3);
 
         List<MetagenFlow> flows = ast.getFlows();
